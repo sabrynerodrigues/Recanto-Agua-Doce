@@ -1,0 +1,6 @@
+Coloque aqui as fotos do sítio, com os nomes exatos listados no LEIA-ME.md
+da pasta de cima (01-capa.jpg, 02-quarto.jpg, e assim por diante).
+
+Antes de colocar, comprima cada foto em squoosh.app para no máximo 300 KB.
+E confira: nenhuma foto pode mostrar placa, número ou referência que
+identifique o endereço do sítio.
