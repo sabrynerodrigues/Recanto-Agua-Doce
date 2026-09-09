@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recanto Água Doce — casa de campo e rio em Cruzeiro / SP</title>
+<meta name="description" content="Sítio para até 14 pessoas na zona rural de Cruzeiro, no Vale do Paraíba: rio dentro da propriedade, piscina, salão com churrasqueira e cozinha completa. Reserva direta pelo WhatsApp.">
+<link rel="canonical" href="https://recantoaguadoce.com.br/">
+<meta name="theme-color" content="#984216">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Recanto Água Doce">
+<meta property="og:title" content="Onde a água corre, o tempo descansa">
+<meta property="og:description" content="Uma casa entre o rio e a mata, feita para reunir. Até 14 pessoas, na zona rural de Cruzeiro / SP.">
+<meta property="og:url" content="https://recantoaguadoce.com.br/">
+<meta property="og:image" content="https://recantoaguadoce.com.br/img/capa.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* =========================================================
+   MOBILE FIRST — o bloco base é o celular.
+   Cada @media (min-width) só acrescenta.
+   ========================================================= */
+:root{
+  --barro:#984216; --barro-escuro:#7C350F;
+  --areia:#E4D6C5; --areia-clara:#EFE6D9; --areia-escura:#D3C2AC;
+  --ceu:#78898F; --salvia:#8D957E;
+  --tinta:#1F1B16; --tinta-2:#5B5145; --tinta-3:#8B7F6E;
+  --pad:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--areia);color:var(--tinta);
+  font-family:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400;margin:0;text-wrap:balance}
+p{margin:0 0 1em}
+a{color:inherit}
+img{display:block;max-width:100%}
+
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 var(--pad)}
+.narrow{max-width:60ch}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase}
+.rotulo{color:var(--barro);margin:0 0 .9rem}
+
+.btn{
+  display:inline-block;background:var(--barro);color:var(--areia-clara);border:1px solid var(--barro);
+  padding:.85rem 1.5rem;text-decoration:none;font-size:.92rem;font-weight:500;letter-spacing:.02em;
+  font-family:inherit;cursor:pointer;text-align:center;
+  transition:background .2s ease,border-color .2s ease;
+}
+.btn:hover{background:var(--barro-escuro);border-color:var(--barro-escuro)}
+.btn-claro{background:transparent;color:#EFE6D9;border-color:rgba(239,230,217,.55)}
+.btn-claro:hover{background:rgba(239,230,217,.14);border-color:#EFE6D9}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--barro);outline-offset:3px}
+
+section{padding:3rem 0}
+h2{font-size:1.85rem;line-height:1.14}
+.lead{color:var(--tinta-2);margin-top:.9rem}
+
+/* ---------------- capa ---------------- */
+.capa{position:relative;background:#211C16;overflow:hidden}
+.capa>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.capa::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(24,20,15,.60) 0%,rgba(24,20,15,.10) 30%,rgba(24,20,15,.28) 55%,rgba(24,20,15,.84) 100%)}
+.capa-dentro{position:relative;z-index:2;min-height:88svh;display:flex;flex-direction:column;justify-content:space-between;padding:1.4rem 0 2.2rem}
+.capa-topo{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.assinatura{color:#EFE6D9;line-height:1}
+.assinatura .a1{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;display:block}
+.assinatura .a2{font-family:"Instrument Serif",Georgia,serif;font-size:1.45rem;letter-spacing:.05em;display:block;margin-top:.2rem}
+.menu{display:none}
+.btn-topo{padding:.5rem 1rem;font-size:.8rem}
+
+.capa-baixo{text-align:left}
+.capa-baixo h1{color:#F3EBDE;font-size:2.15rem;line-height:1.08;margin:0;text-align:left;text-wrap:pretty}
+.capa-baixo .selo{margin-top:1rem;color:#E4D6C5;opacity:.9;text-align:left}
+.capa-acoes{display:flex;flex-direction:column;gap:.7rem;margin-top:1.4rem;align-items:stretch}
+
+/* ---------------- essência ---------------- */
+.abre{display:grid;gap:1.6rem;justify-items:start}
+.emblema{width:112px;height:112px;color:var(--salvia)}
+.emblema svg{width:100%;height:100%;display:block}
+.nome-grande{line-height:1}
+.nome-grande .n1{font-family:"Instrument Serif",Georgia,serif;font-size:2.6rem;color:var(--barro);display:block;line-height:1}
+.nome-grande .n2{font-weight:600;font-size:1.1rem;letter-spacing:.06em;display:block;margin-top:.65rem}
+.frase-abre{font-family:"Instrument Serif",Georgia,serif;font-size:1.35rem;line-height:1.32;margin:1.3rem 0 0;text-wrap:pretty}
+
+.verbos{display:grid;gap:1.4rem;margin-top:2.4rem}
+.verbo{border-top:1px solid var(--areia-escura);padding-top:1rem}
+.verbo h3{font-family:"Instrument Sans",Arial,sans-serif;font-weight:600;font-size:.95rem;letter-spacing:.1em;text-transform:uppercase;color:var(--barro);margin-bottom:.4rem}
+.verbo p{margin:0;color:var(--tinta-2);font-size:.95rem}
+
+/* ---------------- blocos com foto ---------------- */
+.duo{display:grid;gap:1.6rem}
+.moldura{position:relative;overflow:hidden;background:linear-gradient(150deg,var(--salvia) 0%,#9BA391 45%,var(--ceu) 100%);display:flex;align-items:flex-end}
+.moldura>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.moldura .chip{position:relative;margin:.8rem;padding:.35rem .6rem;background:rgba(31,27,22,.74);color:var(--areia);
+  font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.08em;line-height:1.35}
+.r43{aspect-ratio:4/3}.r34{aspect-ratio:3/4}
+
+/* ---------------- carrossel ---------------- */
+.car-topo{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:1.8rem}
+.car-conta{color:var(--tinta-3)}
+.car-setas{display:flex;gap:.5rem}
+.car-btn{width:42px;height:42px;background:transparent;border:1px solid var(--areia-escura);color:var(--tinta);
+  font-size:1.15rem;line-height:1;cursor:pointer;font-family:inherit}
+.car-btn:hover{background:var(--areia-clara);border-color:var(--tinta-3)}
+.car-btn[disabled]{opacity:.35;cursor:default}
+.trilho{display:flex;gap:.8rem;margin-top:.9rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:.3rem}
+.trilho::-webkit-scrollbar{display:none}
+.gitem{flex:0 0 82%;scroll-snap-align:start;padding:0;border:0;cursor:pointer;font:inherit;color:inherit;
+  text-align:left;position:relative;aspect-ratio:3/4}
+.gitem::after{content:"";position:absolute;inset:0;background:rgba(31,27,22,0);transition:background .2s ease}
+.gitem:hover::after{background:rgba(31,27,22,.14)}
+.galeria-nota{margin-top:1rem;color:var(--tinta-3);font-size:.85rem}
+
+/* ---------------- lightbox ---------------- */
+.lb[hidden]{display:none!important}
+.lb{position:fixed;inset:0;z-index:60;background:rgba(20,17,13,.95);display:flex;flex-direction:column}
+.lb-topo{display:flex;justify-content:space-between;align-items:center;padding:.9rem 1rem;color:var(--areia);gap:1rem}
+.lb-corpo{flex:1;display:flex;align-items:center;justify-content:center;padding:0 .5rem;min-height:0}
+.lb-quadro{width:100%;display:flex;align-items:center;justify-content:center}
+.lb-quadro img{max-width:100%;max-height:66svh;width:auto;height:auto;object-fit:contain}
+.lb-vazio{width:100%;aspect-ratio:3/4;max-height:66svh;background:linear-gradient(150deg,var(--salvia) 0%,#9BA391 45%,var(--ceu) 100%);
+  display:flex;align-items:center;justify-content:center;color:#20211C;text-align:center;padding:1.5rem}
+.lb-vazio span{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.1em;max-width:30ch;line-height:1.7}
+.lb-pe{display:flex;flex-direction:column;gap:.9rem;padding:1rem 1rem 1.4rem;color:var(--areia)}
+.lb-legenda{font-size:.88rem;color:#E4D6C5}
+.lb-nav{display:flex;gap:.6rem}
+.lb-btn{background:transparent;border:1px solid rgba(228,214,197,.45);color:var(--areia);
+  width:46px;height:46px;font-size:1.15rem;cursor:pointer;line-height:1;font-family:inherit}
+.lb-btn:hover{background:rgba(228,214,197,.14)}
+
+/* ---------------- listas em blocos ---------------- */
+.itens,.usos,.passos{display:grid;gap:1px;background:var(--areia-escura);border:1px solid var(--areia-escura);margin-top:2.2rem}
+.item,.uso,.passo{background:var(--areia-clara)}
+.item{padding:1.2rem 1.25rem 1.35rem}
+.item b{display:block;font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:1.25rem;line-height:1.2}
+.item span{display:block;font-size:.9rem;color:var(--tinta-2);margin-top:.35rem;line-height:1.5}
+
+.uso{padding:0;display:flex;flex-direction:column}
+.uso-foto{width:100%}
+.uso-txt{padding:1.5rem 1.5rem 1.7rem;display:flex;flex-direction:column;flex:1}
+.uso h3{font-family:"Instrument Serif",Georgia,serif;font-size:1.5rem;margin-bottom:.15rem;line-height:1.15}
+.uso .tag{color:var(--barro);display:block;margin-bottom:.8rem}
+.uso ul{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.55rem}
+.uso li{display:grid;grid-template-columns:auto 1fr;gap:.6rem;font-size:.93rem;color:var(--tinta-2)}
+.uso li b{color:var(--barro);font-weight:500}
+
+.passo{padding:1.2rem 1.25rem 1.4rem}
+.passo .n{color:var(--barro);display:block;margin-bottom:.5rem}
+.passo b{display:block;font-weight:600;font-size:.95rem;margin-bottom:.2rem}
+.passo span{font-size:.88rem;color:var(--tinta-2);line-height:1.45}
+
+/* ---------------- depoimentos ---------------- */
+.falas{display:grid;gap:1.6rem;margin-top:2.2rem}
+.fala{border-top:2px solid var(--barro);padding-top:1.1rem;display:flex;flex-direction:column}
+.fala p{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:1.06rem;line-height:1.45}
+.fala .quem{margin-top:auto;padding-top:.5rem}
+.fala cite{font-style:normal;display:block;font-weight:600;font-size:.92rem}
+.fala .onde{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-3)}
+
+/* ---------------- região ---------------- */
+.linhas{list-style:none;padding:0;margin:1.4rem 0 0}
+.linhas li{display:grid;gap:.15rem;border-top:1px solid var(--areia-escura);padding:.8rem 0;font-size:.94rem}
+.linhas li em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-3)}
+.perto{display:grid;gap:1.1rem;margin-top:1.8rem}
+.perto div{border-top:1px solid var(--areia-escura);padding-top:.85rem}
+.perto b{display:block;font-weight:600;font-size:.95rem}
+.perto span{font-size:.88rem;color:var(--tinta-2)}
+
+/* ---------------- faq ---------------- */
+.faq{margin-top:2rem;border-top:1px solid var(--areia-escura)}
+.faq details{border-bottom:1px solid var(--areia-escura)}
+.faq summary{list-style:none;cursor:pointer;padding:1rem 2.2rem 1rem 0;position:relative;font-weight:500;font-size:1rem;line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:.2rem;top:.95rem;font-family:"IBM Plex Mono",monospace;font-size:1.15rem;color:var(--barro);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .resposta{padding:0 1rem 1.2rem 0;color:var(--tinta-2);font-size:.95rem}
+.faq .resposta p:last-child{margin-bottom:0}
+
+/* ---------------- formulário ---------------- */
+.form-secao{background:var(--barro);color:#F3EBDE}
+.form-secao h2{color:#F3EBDE}
+.form-secao .lead{color:rgba(243,235,222,.86)}
+.form-secao .rotulo{color:rgba(243,235,222,.72)}
+form{margin-top:2rem;display:grid;gap:1rem}
+.campo{display:flex;flex-direction:column;gap:.35rem}
+.campo label{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,235,222,.8)}
+.campo input,.campo select,.campo textarea{
+  font-family:inherit;font-size:16px;color:#F3EBDE;background:rgba(243,235,222,.09);
+  border:1px solid rgba(243,235,222,.38);padding:.75rem .85rem;border-radius:0;width:100%}
+.campo textarea{resize:vertical;min-height:88px}
+.campo select option{color:#1F1B16}
+.campo input::placeholder,.campo textarea::placeholder{color:rgba(243,235,222,.48)}
+.form-acao{display:grid;gap:.8rem;margin-top:.3rem}
+.form-acao .btn{background:#F3EBDE;color:var(--barro);border-color:#F3EBDE}
+.form-acao .btn:hover{background:#fff;border-color:#fff}
+.form-nota{font-size:.85rem;color:rgba(243,235,222,.8)}
+.plano-b[hidden]{display:none!important}
+.plano-b{grid-column:1/-1;margin-top:1rem;border:1px solid rgba(243,235,222,.38);padding:1.1rem 1.2rem 1.2rem}
+.plano-b p{font-size:.86rem;color:rgba(243,235,222,.88);margin:0 0 .7rem}
+.plano-b textarea{
+  width:100%;min-height:132px;resize:vertical;font-family:inherit;font-size:.92rem;line-height:1.5;
+  color:#F3EBDE;background:rgba(243,235,222,.09);border:1px solid rgba(243,235,222,.3);padding:.7rem .8rem}
+.plano-b-acoes{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;margin-top:.8rem}
+.plano-b .btn{padding:.6rem 1.2rem;font-size:.86rem}
+.plano-b .link-cru{font-size:.8rem;color:rgba(243,235,222,.85);text-decoration:underline;word-break:break-all}
+.aviso-copia{font-size:.82rem;color:#F3EBDE}
+
+/* ---------------- fecho / rodapé ---------------- */
+.fecho{background:var(--areia-clara);text-align:center}
+.fecho .frases{margin-top:1.8rem;display:grid;gap:.6rem;justify-items:center;color:var(--tinta-3)}
+footer{background:var(--tinta);color:var(--areia);padding:2.2rem 0 2.8rem;font-size:.86rem}
+footer .linha{display:grid;gap:1.4rem}
+footer a{color:#E9A56F;text-decoration:none}
+footer .marca-rodape{display:flex;align-items:center;gap:.9rem}
+footer .emb-mini{width:42px;height:42px;color:var(--areia);flex:0 0 auto}
+footer .emb-mini svg{width:100%;height:100%;display:block}
+
+.proto{background:var(--tinta);color:var(--areia);padding:.5rem 0;font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.08em}
+.proto .wrap{display:grid;gap:.2rem}
+
+/* ================= ≥ 600px ================= */
+@media(min-width:600px){
+  :root{--pad:28px}
+  body{font-size:16.5px}
+  section{padding:3.6rem 0}
+  h2{font-size:2.15rem}
+  .capa-baixo h1{font-size:2.9rem}
+  .capa-acoes{flex-direction:row;align-items:center}
+  .capa-acoes .btn{flex:0 0 auto}
+  .nome-grande .n1{font-size:3.1rem}
+  .nome-grande .n2{font-size:1.25rem}
+  .frase-abre{font-size:1.5rem}
+  .verbos{grid-template-columns:repeat(3,1fr);gap:1.8rem}
+  .gitem{flex-basis:52%}
+  .itens{grid-template-columns:repeat(2,1fr)}
+  .passos{grid-template-columns:repeat(2,1fr)}
+  .perto{grid-template-columns:repeat(3,1fr)}
+  .linhas li{grid-template-columns:8.5rem 1fr;gap:1rem;align-items:baseline}
+  form{grid-template-columns:1fr 1fr;gap:1rem 1.4rem}
+  .campo.largo,.form-acao{grid-column:1/-1}
+  .form-acao{grid-template-columns:auto 1fr;align-items:center;gap:1.2rem}
+  .fecho .frases{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.6rem}
+  .lb-pe{flex-direction:row;justify-content:space-between;align-items:center}
+  footer .linha{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.2rem 2rem}
+  .proto .wrap{display:flex;justify-content:space-between;gap:1.4rem}
+}
+
+/* ================= ≥ 880px ================= */
+@media(min-width:880px){
+  :root{--pad:40px}
+  section{padding:5rem 0}
+  h2{font-size:2.6rem}
+  .capa-dentro{min-height:min(88vh,780px);padding:1.9rem 0 3rem}
+  .capa-baixo h1{font-size:3.8rem;max-width:16ch}
+  .abre{grid-template-columns:150px 1fr;gap:3rem;align-items:center;justify-items:stretch}
+  .emblema{width:150px;height:150px}
+  .nome-grande .n1{font-size:3.7rem}
+  .nome-grande .n2{font-size:1.5rem;margin-top:.8rem}
+  .frase-abre{font-size:1.65rem;white-space:nowrap}
+  .duo{grid-template-columns:1fr 1fr;gap:3.2rem;align-items:center}
+  .duo.inverso > :first-child{order:2}
+  .gitem{flex-basis:31%}
+  .itens{grid-template-columns:repeat(3,1fr)}
+  .usos{grid-template-columns:1fr 1fr}
+  .falas{grid-template-columns:repeat(3,1fr);gap:2rem}
+  .lb-quadro img{max-height:74vh}
+  .lb-vazio{aspect-ratio:3/2;max-height:74vh}
+}
+
+/* ================= ≥ 1000px ================= */
+@media(min-width:1000px){
+  .menu{display:flex;gap:1.5rem;align-items:center}
+  .menu a{color:#EFE6D9;text-decoration:none;font-size:.82rem;letter-spacing:.04em;opacity:.86}
+  .menu a:hover{opacity:1;color:#E9A56F}
+  .passos{grid-template-columns:repeat(5,1fr)}
+}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<header class="capa">
+  <img id="img-capa" src="img/capa.jpg" alt="A casa do Recanto Água Doce vista do gramado, entre as palmeiras, com a mata de eucalipto subindo o morro atrás.">
+  <div class="capa-dentro">
+    <div class="wrap capa-topo">
+      <div class="assinatura"><span class="a1">Recanto</span><span class="a2">Água Doce</span></div>
+      <nav class="menu">
+        <a href="#essencia">Essência</a>
+        <a href="#casa">A casa</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#usos">Pernoite e evento</a>
+        <a href="#regiao">A região</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+      <a class="btn btn-claro btn-topo" href="#reservar">Ver datas</a>
+    </div>
+    <div class="wrap capa-baixo">
+      <h1>Onde a água corre,<br>o tempo descansa.</h1>
+      <p class="mono selo">Rio privativo · Natureza · Família</p>
+      <div class="capa-acoes">
+        <a class="btn" href="#reservar">Consultar disponibilidade</a>
+        <a class="btn btn-claro" href="#casa">Conhecer a casa</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="essencia">
+  <div class="wrap">
+    <div class="abre">
+      <div class="emblema"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+
+<path fill="currentColor" d="M504.734 239.713C511.198 238.907 520.991 239.584 527.568 240.195C562.74 243.467 596.039 257.538 622.9 280.48C657.955 309.915 679.854 352.091 683.762 397.697C685.026 413.084 684.583 429.731 684.544 445.259L684.493 511.914L684.503 581.355C684.516 602.713 685.681 623.992 681.212 644.915C674.942 674.271 662.943 700.657 643.413 723.63C617.653 753.923 582.279 774.459 543.199 781.808C535.436 783.27 528.617 783.786 520.774 784.416C472.233 785.1 434.416 772.415 397.185 740.104C363.504 710.875 342.733 664.754 340.332 620.606C339.586 606.893 339.88 590.273 339.913 576.301L339.997 506.021L339.946 439.95C339.938 427.66 339.47 410.935 340.493 398.955C343.647 361.928 358.653 326.903 383.285 299.078C414.07 263.674 457.887 242.256 504.734 239.713ZM504.796 251.217C548.178 247.792 594.929 268.216 625.444 298.511C651.325 324.463 667.731 358.362 672.027 394.761C673.603 408.586 673.263 424.177 673.319 438.203C644.963 427.441 629.947 427.079 604.011 438.718C603.894 416.012 603.372 390.649 604.03 368.062C606.699 370.446 609.316 372.889 611.879 375.387C614.754 372.079 616.318 370.251 619.619 367.448C614.361 362.646 608.873 358.203 603.652 353.351C603.151 333.831 603.491 312.17 603.432 292.504C590.631 292.378 577.83 292.319 565.028 292.329L565.141 319.463C553.816 309.286 541.685 299.052 530.175 289C524.106 284.017 518.932 278.893 512.472 273.854C502.541 283.623 485.527 297.525 474.594 306.973L404.312 367.404C407.424 369.865 410.446 372.346 412.824 375.547C415.448 373.074 418.255 370.109 420.819 367.52C421.198 376.766 420.977 387.5 421.014 396.832C421.144 411.088 421.151 425.345 421.034 439.601C394.011 428.084 378.984 425.288 351.276 437.961C351.039 428.742 351.154 419.119 351.398 409.892C353.673 323.99 420.879 256.836 504.796 251.217Z"/>
+<path fill="none" d="M511.702 289.832L592.637 359.187L592.631 477.593L539.883 477.256L540.281 430.823L484.763 430.897L484.622 477.402L431.986 480.498L431.783 359.3L511.702 289.832ZM486.295 489.104C489.901 488.651 496.943 488.854 500.759 488.88C575.632 488.929 622.493 488.271 673.149 502.666L673.363 529.145C610.757 522.302 563.553 533.754 504.909 553.476C450.335 571.57 411.265 592.615 351.364 588.693L351.54 564.687C402.401 519.518 446.776 497.292 486.295 489.104ZM632.85 538.729C645.513 538.112 660.473 539.548 673.149 540.593L673.102 579.69C660.839 578.909 649.831 577.843 637.459 578.073C601.74 578.738 565.131 587.088 531.678 599.285C485.688 616.052 439.975 638.285 391.12 645.306C379.251 647.137 367.209 647.568 355.24 646.591C351.816 628.883 351.497 618.582 351.406 600.663C366.012 601.266 379.039 601.212 393.605 599.17C442.835 592.269 488.037 570.159 535.486 555.853C570.634 545.256 596.2 540.167 632.85 538.729ZM627.767 590.208C641.782 589.067 659.095 590.265 673.049 591.636C673.237 610.206 673.719 622.539 670.211 641.043C619.923 637.212 569.968 648.485 529.421 679.146C511.708 692.54 496.786 706.789 478.099 719.15C459.631 731.366 444.685 737.928 424.559 746.365C419.955 743.474 416.732 741.189 412.404 737.973C387.124 717.218 368.355 689.624 358.338 658.487C452.979 660.048 524.557 599.365 616.826 590.981C620.454 590.652 624.128 590.433 627.767 590.208ZM640.841 652.22C649.838 651.748 658.781 652.197 667.769 652.617C664.464 663.503 660.89 674.344 655.703 684.538C632.503 730.129 588.269 763.118 537.592 771.233C514.138 774.989 493.443 773.183 470.388 767.556C458.033 764.187 447.598 759.587 436.245 753.862C460.453 744.533 483.074 731.522 503.311 715.29C512.59 707.86 521.971 698.91 531.3 691.938C565.107 666.668 598.872 654.189 640.841 652.22ZM382.105 441.707C394.183 440.734 411.654 446.621 421.005 454.237L421.153 482.032C407.166 483.946 395.197 486.591 381.505 489.946C371.693 493.08 361.169 495.876 351.071 499.072C351.243 483.494 351.088 467.71 351.056 452.116C359.937 446.098 371.462 442.655 382.105 441.707ZM635.021 441.703C648.367 440.713 661.568 445.897 673.324 451.723C672.999 464.316 673.145 477.576 673.115 490.206C664.834 488.256 655.993 486.669 647.606 485.035C633.156 482.198 618.597 479.95 603.965 478.297L603.966 452.685C613.945 446.26 623.265 442.957 635.021 441.703Z"/>
+</svg></div>
+      <div>
+        <p class="mono rotulo">Pausa, água e afeto</p>
+        <div class="nome-grande"><span class="n1">Recanto</span><span class="n2">ÁGUA DOCE</span></div>
+        <p class="frase-abre">Uma casa entre o rio e a mata, feita para reunir.</p>
+      </div>
+    </div>
+    <div class="verbos">
+      <div class="verbo"><h3>Acolher</h3><p>Calor humano, sem excessos. A casa é da nossa família e continua sendo cuidada como casa.</p></div>
+      <div class="verbo"><h3>Desacelerar</h3><p>Ritmo sereno e natural. Ninguém aqui tem hora para acordar nem lugar para correr.</p></div>
+      <div class="verbo"><h3>Pertencer</h3><p>Memórias feitas em família. Catorze pessoas cabem na mesma mesa, e é para isso que ela existe.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="rio">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <p class="mono rotulo">O que só existe aqui</p>
+        <h2>O rio é só de vocês</h2>
+        <p class="lead">Ele corre dentro do terreno, e a escada de madeira que desce até a água começa dentro de casa. Enquanto vocês estiverem aqui, a margem é da família — sem dividir espaço com ninguém.</p>
+        <p class="lead">Foi ele que deu nome ao sítio. É onde a manhã costuma começar e é o barulho com que se dorme.</p>
+      </div>
+      <div class="moldura r43"><img id="img-rio" src="img/rio.jpg" alt="O rio do sítio: corredeira entre as pedras descendo para um poço de água clara, com a mata fechada em volta."></div>
+    </div>
+  </div>
+</section>
+
+<section id="casa">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="mono rotulo">A casa</p>
+      <h2>Silêncio para contemplar, espaço de sobra para a família fazer barulho</h2>
+    </div>
+    <div class="itens">
+      <div class="item"><b>Quartos</b><span>Um de casal e dois com três beliches cada — catorze lugares, todos com ventilador de teto</span></div>
+      <div class="item"><b>Salão</b><span>O coração do sítio: churrasqueira, mesas de madeira e quatro dos cinco banheiros, então não tem fila</span></div>
+      <div class="item"><b>Piscina</b><span>É onde o dia acontece. Sol de um lado, sombra do outro, e criança entrando e saindo a tarde inteira</span></div>
+      <div class="item"><b>Cozinha completa</b><span>Fogão, geladeira, freezer, micro-ondas, airfryer, cafeteira, liquidificador, batedeira, panelas, louças e ferro</span></div>
+      <div class="item"><b>Área externa</b><span>Forno e fogão a lenha, verde e sombra para a tarde passar devagar</span></div>
+      <div class="item"><b>Wi-Fi</b><span>Chega na casa toda — para mandar a foto do dia e depois largar o celular em paz</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="dia">
+  <div class="wrap">
+    <div class="duo inverso">
+      <div class="moldura r43"><img id="img-porsol" src="img/por-do-sol.jpg" alt="O fim de tarde na beira da piscina, com o sol baixando atrás das árvores e as cadeiras de ferro no deck de pedra."></div>
+      <div>
+        <p class="mono rotulo">Um dia por aqui</p>
+        <h2>Café sem hora para acabar, rio de manhã, lenha quando escurece</h2>
+        <p class="lead">O café da manhã se estende. A manhã costuma terminar no rio, e a turma só volta para o almoço no salão. À tarde, piscina e sombra.</p>
+        <p class="lead">E quando o sol cai, nada como uma comidinha no fogão a lenha.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="mono rotulo">O lugar</p>
+      <h2>Luz real, água em movimento, madeira e textura</h2>
+      <p class="lead">Arraste para o lado, ou toque em qualquer foto para ver grande.</p>
+    </div>
+    <div class="car-topo">
+      <span class="mono car-conta" id="car-conta">01 / 08</span>
+      <span class="car-setas">
+        <button class="car-btn" id="car-ant" aria-label="Fotos anteriores">‹</button>
+        <button class="car-btn" id="car-prox" aria-label="Próximas fotos">›</button>
+      </span>
+    </div>
+    <div class="trilho" id="galeria" tabindex="0" aria-label="Galeria de fotos do sítio">
+      <button type="button" class="gitem moldura" data-de="img-capa" data-cap="A casa vista do gramado, entre as palmeiras, com a mata subindo o morro atrás."></button>
+      <button type="button" class="gitem moldura"><img src="img/escada-rio.jpg" alt="A escada de madeira que desce da casa até o rio, com a água cor de âmbar entre as pedras."></button>
+      <button type="button" class="gitem moldura" data-de="img-rio" data-cap="A corredeira do rio descendo para o poço, logo abaixo da casa."></button>
+      <button type="button" class="gitem moldura" data-de="img-porsol" data-cap="O fim de tarde na beira da piscina, com o sol baixando atrás das árvores."></button>
+      <button type="button" class="gitem moldura"><img src="img/piscina.jpg" alt="A piscina com o escorregador, o deck de pedra e o morro verde ao fundo."></button>
+      <button type="button" class="gitem moldura"><img src="img/salao.jpg" alt="O salão coberto, com telha aparente, churrasqueira, forno e as mesas e cadeiras já montadas."></button>
+      <button type="button" class="gitem moldura"><img src="img/casa.jpg" alt="A casa por fora: colunas de tijolo, telhado de barro e a varanda corrida de frente para o jardim."></button>
+      <button type="button" class="gitem moldura"><img src="img/sala-lareira.jpg" alt="A sala de estar com a lareira de tijolo aparente, pé-direito alto e telha à vista."></button>
+      <button type="button" class="gitem moldura"><img src="img/sala-vitrais.jpg" alt="O outro canto da sala, com os vitrais coloridos e a passagem para a cozinha."></button>
+      <button type="button" class="gitem moldura"><img src="img/copa.jpg" alt="A copa, com mesa de madeira escura e a parede dos relógios antigos."></button>
+      <button type="button" class="gitem moldura"><img src="img/cozinha.jpg" alt="A cozinha, com armário antigo de madeira, geladeira e dois fogões."></button>
+      <button type="button" class="gitem moldura"><img src="img/quarto.jpg" alt="Um dos quartos, com camas encostadas nas paredes e a janela de madeira verde ao fundo."></button>
+      <button type="button" class="gitem moldura"><img src="img/banheiro.jpg" alt="Um dos cinco banheiros, com azulejo estampado e box amplo."></button>
+      <button type="button" class="gitem moldura"><img src="img/jardim.jpg" alt="O jardim com o poço antigo de pedra e os bancos à sombra."></button>
+      <button type="button" class="gitem moldura"><img src="img/gramado.jpg" alt="O gramado aberto, com o jardim de palmeiras e a mata de eucalipto fechando o fundo."></button>
+    </div>
+    <p class="galeria-nota">Quinze fotos: o rio, a piscina, o salão, a casa por dentro e por fora, os quartos e o verde em volta.</p>
+  </div>
+</section>
+
+<section id="usos">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="mono rotulo">Como usar o sítio</p>
+      <h2>Duas formas de aproveitar</h2>
+    </div>
+    <div class="usos">
+      <div class="uso">
+        <div class="uso-foto moldura r43"><img src="img/fim-de-semana.jpg" alt="Criança sentada na grama do sítio, sorrindo, com o jardim e o chafariz ao fundo no fim da tarde."></div>
+        <div class="uso-txt">
+          <span class="mono tag">Pernoite</span>
+          <h3>Fim de semana, feriado ou férias</h3>
+          <p class="lead" style="margin-top:.5rem">A casa inteira para até catorze pessoas, sem dividir nada com ninguém.</p>
+          <ul>
+            <li><b>·</b><span>Check-in das 15h às 19h, check-out das 8h às 12h — flexíveis, é só combinar</span></li>
+            <li><b>·</b><span>Roupa de cama e banho disponíveis como opcional, se você não quiser carregar a sua</span></li>
+            <li><b>·</b><span>Pets bem-vindos, com aviso prévio</span></li>
+            <li><b>·</b><span>Em fim de semana trabalhamos com o pacote completo, não com diária avulsa</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="uso">
+        <div class="uso-foto moldura r43"><img src="img/evento.jpg" alt="Mesa de festa montada no gramado do sítio, com toalha azul, arco de balões brancos e margaridas, doces e bolo."></div>
+        <div class="uso-txt">
+          <span class="mono tag">Evento</span>
+          <h3>Aniversário, confraternização, retiro</h3>
+          <p class="lead" style="margin-top:.5rem">Você vai adorar realizar seu evento aqui — confira as condições.</p>
+          <ul>
+            <li><b>·</b><span>Cozinha bem equipada para receber um evento com poucos convidados</span></li>
+            <li><b>·</b><span>Mesas e cadeiras já disponíveis no local</span></li>
+            <li><b>·</b><span>Visual deslumbrante, que completa a decoração sozinho</span></li>
+            <li><b>·</b><span>Cada caso é combinado antes, direto comigo</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="passos">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="mono rotulo">Passo a passo</p>
+      <h2>Da primeira mensagem até a chave na mão</h2>
+      <p class="lead">O valor não fica no site porque muda conforme a data, o tamanho do grupo e o formato. Por isso o orçamento sai por mensagem.</p>
+    </div>
+    <div class="passos">
+      <div class="passo"><span class="mono n">01</span><b>Você me chama</b><span>Data, quantas pessoas e se é pernoite ou evento</span></div>
+      <div class="passo"><span class="mono n">02</span><b>Eu faço o orçamento</b><span>Conforme a data e o formato</span></div>
+      <div class="passo"><span class="mono n">03</span><b>Visita, se quiser</b><span>Opcional, mas eu recomendo conhecer antes</span></div>
+      <div class="passo"><span class="mono n">04</span><b>Sinal e contrato</b><span>Locação por temporada, tudo por escrito</span></div>
+      <div class="passo"><span class="mono n">05</span><b>Guia do hóspede</b><span>Endereço completo e vídeo do trajeto</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="mono rotulo">Quem já passou por aqui</p>
+      <h2>Avaliações reais de quem passou um fim de semana aqui</h2>
+    </div>
+    <div class="falas">
+      <div class="fala">
+        <p>“Tivemos uma ótima experiência nessa hospedagem. O espaço é maravilhoso, confortável, bem completo, além de esteticamente lindo. Você dorme com o barulhinho do rio, e o acesso a ele é dentro da propriedade. Sabryne foi super gentil desde o primeiro contato. Recomendamos e voltaremos em breve.”</p>
+        <div class="quem"><cite>Tainara</cite><span class="onde">Airbnb · 5 estrelas</span></div>
+      </div>
+      <div class="fala">
+        <p>“Foi tudo de acordo com o que desejávamos: local tranquilo junto à natureza, a anfitriã simpática, e ficamos muito satisfeitos. Pretendo voltar assim que puder.”</p>
+        <div class="quem"><cite>Zenildo</cite><span class="onde">Hóspede do Recanto</span></div>
+      </div>
+      <div class="fala">
+        <p>“Foi uma benção, né? Quero te agradecer mais uma vez por toda disponibilidade e cuidado. E se Deus quiser, acredito eu que a gente vai voltar — e aí a gente já sabe do lugarzinho que vamos ficar quando vier de novo.”</p>
+        <div class="quem"><cite>Isabela Garcia</cite><span class="onde">Hóspede do Recanto</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="regiao">
+  <div class="wrap">
+    <div class="duo inverso">
+      <div class="moldura r43"><img src="img/gramado.jpg" alt="O gramado aberto do sítio, com o jardim de palmeiras e a mata de eucalipto ao fundo."></div>
+      <div>
+        <p class="mono rotulo">A região</p>
+        <h2>Zona rural de Cruzeiro, no Vale do Paraíba</h2>
+        <p class="lead">Perto o bastante para buscar o que faltou, longe o bastante para ouvir o rio à noite.</p>
+        <ul class="linhas">
+          <li><em>Centro</em><span>20 minutos de carro</span></li>
+          <li><em>Mercado</em><span>10 a 15 minutos</span></li>
+          <li><em>Acesso</em><span>1,5 km de estrada de terra até a porteira, em boas condições — carro baixo passa</span></li>
+          <li><em>Endereço</em><span>O endereço exato e o vídeo do trajeto vão com o guia, depois da reserva confirmada</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="perto">
+      <div><b>Canção Nova</b><span>~20 min, em Cachoeira Paulista. Retiros e encontros o ano todo.</span></div>
+      <div><b>INPE</b><span>~20 min, em Cachoeira Paulista. Instituto Nacional de Pesquisas Espaciais.</span></div>
+      <div><b>Cachoeira da Pedreira</b><span>Em Lavrinhas. Uma sequência de poços entre pedras, na Mantiqueira.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="mono rotulo">Dúvidas frequentes</p>
+      <h2>O que as pessoas costumam me perguntar antes de reservar</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Quantas pessoas cabem?</summary>
+        <div class="resposta"><p>Até catorze na hospedagem: um quarto de casal e dois quartos com três beliches cada. Para evento a capacidade é outra, e a gente combina caso a caso.</p></div>
+      </details>
+      <details>
+        <summary>Posso fazer festa ou evento?</summary>
+        <div class="resposta"><p>Pode, e o lugar é lindo para isso. É só combinar antes comigo — me chama que eu monto o orçamento.</p></div>
+      </details>
+      <details>
+        <summary>É bom para crianças?</summary>
+        <div class="resposta"><p>É o público da casa, e é com elas que o sítio fica melhor: rio, piscina e espaço para correr o dia inteiro. A piscina e o rio não têm cerca, então a brincadeira é sempre com adulto por perto — fora isso, é soltar as crianças e deixar o dia acontecer.</p></div>
+      </details>
+      <details>
+        <summary>Qual é o horário de check-in e check-out?</summary>
+        <div class="resposta"><p>Check-in das 15h às 19h, check-out das 8h às 12h. Os dois são flexíveis mediante combinação — depende de ter hóspede saindo ou entrando no mesmo dia.</p></div>
+      </details>
+      <details>
+        <summary>Vocês fornecem roupa de cama e banho?</summary>
+        <div class="resposta"><p>Existe como opcional pago: kit de cama e kit de banho. Se preferir trazer a sua, também funciona.</p></div>
+      </details>
+      <details>
+        <summary>Posso levar meu cachorro?</summary>
+        <div class="resposta"><p>Pode, com aviso prévio. Como o sítio é aberto, vale ficar de olho para o bichinho não se afastar.</p></div>
+      </details>
+      <details>
+        <summary>Tem internet e sinal de celular?</summary>
+        <div class="resposta"><p>Tem Wi-Fi na casa. O sinal de celular varia por operadora — a Claro é a que pega melhor por aqui.</p></div>
+      </details>
+      <details>
+        <summary>Tem ar-condicionado?</summary>
+        <div class="resposta"><p>Todos os quartos têm ventilador de teto. A casa é fresca e a noite no sítio, com a mata em volta, ajuda bastante.</p></div>
+      </details>
+      <details>
+        <summary>Como é a estrada?</summary>
+        <div class="resposta"><p>São 1,5 km de estrada de terra até a porteira, em boas condições. Carro baixo passa, inclusive com chuva.</p></div>
+      </details>
+      <details>
+        <summary>E se eu precisar cancelar?</summary>
+        <div class="resposta"><p>Até a data da visita ao imóvel, devolvo 50% do sinal. Depois da visita, o sinal não é devolvido. A menos de 48h do check-in, não há devolução de nenhum valor pago.</p></div>
+      </details>
+      <details>
+        <summary>Por que o preço não está no site?</summary>
+        <div class="resposta"><p>Porque ele muda conforme a data, o tamanho do grupo e o formato. Prefiro fazer o orçamento certo para o seu caso a colocar um número que não vai valer para você.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="reservar" class="form-secao">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="mono rotulo">Consultar disponibilidade</p>
+      <h2>Me conta as datas que eu respondo com tudo</h2>
+      <p class="lead">Preenche aqui e o WhatsApp abre com a mensagem pronta. Nada é enviado por este site — você confere o texto antes de mandar.</p>
+    </div>
+    <form id="form-reserva" novalidate>
+      <div class="campo">
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como você quer ser chamada ou chamado">
+      </div>
+      <div class="campo">
+        <label for="tipo">O que você procura</label>
+        <select id="tipo" name="tipo">
+          <option value="uma hospedagem">Hospedagem (pernoite)</option>
+          <option value="um evento">Evento (aniversário, confraternização, retiro)</option>
+          <option value="uma visita ao sítio">Só conhecer o sítio primeiro</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="entrada">Entrada</label>
+        <input id="entrada" name="entrada" type="date">
+      </div>
+      <div class="campo">
+        <label for="saida">Saída</label>
+        <input id="saida" name="saida" type="date">
+      </div>
+      <div class="campo">
+        <label for="adultos">Adultos</label>
+        <input id="adultos" name="adultos" type="number" min="1" max="30" inputmode="numeric" placeholder="Ex.: 8">
+      </div>
+      <div class="campo">
+        <label for="criancas">Crianças</label>
+        <input id="criancas" name="criancas" type="number" min="0" max="30" inputmode="numeric" placeholder="Ex.: 3">
+      </div>
+      <div class="campo largo">
+        <label for="obs">Quer me contar mais alguma coisa?</label>
+        <textarea id="obs" name="obs" placeholder="Pet, roupa de cama, horário de chegada, o que for"></textarea>
+      </div>
+      <div class="form-acao">
+        <a class="btn" id="btn-wa" href="https://wa.me/5512991078621" target="_blank" rel="noopener">Abrir o WhatsApp com a mensagem</a>
+        <span class="form-nota">Vai direto para (12) 99107-8621. Se preferir, me chame sem preencher nada.</span>
+      </div>
+      <div class="plano-b" id="plano-b" hidden>
+        <p>Se o WhatsApp não abriu sozinho, copie a mensagem abaixo ou use o link direto.</p>
+        <textarea id="msg-pronta" readonly aria-label="Mensagem pronta para o WhatsApp"></textarea>
+        <div class="plano-b-acoes">
+          <button class="btn" type="button" id="btn-copiar">Copiar mensagem</button>
+          <a class="link-cru" id="link-cru" href="https://wa.me/5512991078621" target="_blank" rel="noopener">abrir wa.me/5512991078621</a>
+          <span class="aviso-copia" id="aviso-copia" hidden>Copiada.</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="fecho">
+  <div class="wrap">
+    <p class="mono rotulo">Recanto Água Doce</p>
+    <h2>Seu tempo começa aqui</h2>
+    <div class="frases mono">
+      <span>Desacelerar também é chegar</span>
+      <span>O rio corre, o tempo fica</span>
+      <span>Água, sombra e conversa</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap linha">
+    <div class="marca-rodape">
+      <div class="emb-mini"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+
+<path fill="currentColor" d="M504.734 239.713C511.198 238.907 520.991 239.584 527.568 240.195C562.74 243.467 596.039 257.538 622.9 280.48C657.955 309.915 679.854 352.091 683.762 397.697C685.026 413.084 684.583 429.731 684.544 445.259L684.493 511.914L684.503 581.355C684.516 602.713 685.681 623.992 681.212 644.915C674.942 674.271 662.943 700.657 643.413 723.63C617.653 753.923 582.279 774.459 543.199 781.808C535.436 783.27 528.617 783.786 520.774 784.416C472.233 785.1 434.416 772.415 397.185 740.104C363.504 710.875 342.733 664.754 340.332 620.606C339.586 606.893 339.88 590.273 339.913 576.301L339.997 506.021L339.946 439.95C339.938 427.66 339.47 410.935 340.493 398.955C343.647 361.928 358.653 326.903 383.285 299.078C414.07 263.674 457.887 242.256 504.734 239.713ZM504.796 251.217C548.178 247.792 594.929 268.216 625.444 298.511C651.325 324.463 667.731 358.362 672.027 394.761C673.603 408.586 673.263 424.177 673.319 438.203C644.963 427.441 629.947 427.079 604.011 438.718C603.894 416.012 603.372 390.649 604.03 368.062C606.699 370.446 609.316 372.889 611.879 375.387C614.754 372.079 616.318 370.251 619.619 367.448C614.361 362.646 608.873 358.203 603.652 353.351C603.151 333.831 603.491 312.17 603.432 292.504C590.631 292.378 577.83 292.319 565.028 292.329L565.141 319.463C553.816 309.286 541.685 299.052 530.175 289C524.106 284.017 518.932 278.893 512.472 273.854C502.541 283.623 485.527 297.525 474.594 306.973L404.312 367.404C407.424 369.865 410.446 372.346 412.824 375.547C415.448 373.074 418.255 370.109 420.819 367.52C421.198 376.766 420.977 387.5 421.014 396.832C421.144 411.088 421.151 425.345 421.034 439.601C394.011 428.084 378.984 425.288 351.276 437.961C351.039 428.742 351.154 419.119 351.398 409.892C353.673 323.99 420.879 256.836 504.796 251.217Z"/>
+<path fill="none" d="M511.702 289.832L592.637 359.187L592.631 477.593L539.883 477.256L540.281 430.823L484.763 430.897L484.622 477.402L431.986 480.498L431.783 359.3L511.702 289.832ZM486.295 489.104C489.901 488.651 496.943 488.854 500.759 488.88C575.632 488.929 622.493 488.271 673.149 502.666L673.363 529.145C610.757 522.302 563.553 533.754 504.909 553.476C450.335 571.57 411.265 592.615 351.364 588.693L351.54 564.687C402.401 519.518 446.776 497.292 486.295 489.104ZM632.85 538.729C645.513 538.112 660.473 539.548 673.149 540.593L673.102 579.69C660.839 578.909 649.831 577.843 637.459 578.073C601.74 578.738 565.131 587.088 531.678 599.285C485.688 616.052 439.975 638.285 391.12 645.306C379.251 647.137 367.209 647.568 355.24 646.591C351.816 628.883 351.497 618.582 351.406 600.663C366.012 601.266 379.039 601.212 393.605 599.17C442.835 592.269 488.037 570.159 535.486 555.853C570.634 545.256 596.2 540.167 632.85 538.729ZM627.767 590.208C641.782 589.067 659.095 590.265 673.049 591.636C673.237 610.206 673.719 622.539 670.211 641.043C619.923 637.212 569.968 648.485 529.421 679.146C511.708 692.54 496.786 706.789 478.099 719.15C459.631 731.366 444.685 737.928 424.559 746.365C419.955 743.474 416.732 741.189 412.404 737.973C387.124 717.218 368.355 689.624 358.338 658.487C452.979 660.048 524.557 599.365 616.826 590.981C620.454 590.652 624.128 590.433 627.767 590.208ZM640.841 652.22C649.838 651.748 658.781 652.197 667.769 652.617C664.464 663.503 660.89 674.344 655.703 684.538C632.503 730.129 588.269 763.118 537.592 771.233C514.138 774.989 493.443 773.183 470.388 767.556C458.033 764.187 447.598 759.587 436.245 753.862C460.453 744.533 483.074 731.522 503.311 715.29C512.59 707.86 521.971 698.91 531.3 691.938C565.107 666.668 598.872 654.189 640.841 652.22ZM382.105 441.707C394.183 440.734 411.654 446.621 421.005 454.237L421.153 482.032C407.166 483.946 395.197 486.591 381.505 489.946C371.693 493.08 361.169 495.876 351.071 499.072C351.243 483.494 351.088 467.71 351.056 452.116C359.937 446.098 371.462 442.655 382.105 441.707ZM635.021 441.703C648.367 440.713 661.568 445.897 673.324 451.723C672.999 464.316 673.145 477.576 673.115 490.206C664.834 488.256 655.993 486.669 647.606 485.035C633.156 482.198 618.597 479.95 603.965 478.297L603.966 452.685C613.945 446.26 623.265 442.957 635.021 441.703Z"/>
+</svg></div>
+      <span>Recanto Água Doce<br>S &amp; B Empreendimentos LTDA · Cruzeiro / SP</span>
+    </div>
+    <span><a href="https://www.instagram.com/recanto.aguadoce">@recanto.aguadoce</a> · <a href="https://wa.me/5512991078621">(12) 99107-8621</a></span>
+  </div>
+</footer>
+
+<div class="lb" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galeria de fotos">
+  <div class="lb-topo">
+    <span class="mono" id="lb-contador">01 / 08</span>
+    <button class="lb-btn" id="lb-fechar" aria-label="Fechar galeria">✕</button>
+  </div>
+  <div class="lb-corpo"><div class="lb-quadro" id="lb-quadro"></div></div>
+  <div class="lb-pe">
+    <span class="lb-legenda" id="lb-legenda"></span>
+    <span class="lb-nav">
+      <button class="lb-btn" id="lb-ant" aria-label="Foto anterior">‹</button>
+      <button class="lb-btn" id="lb-prox" aria-label="Próxima foto">›</button>
+    </span>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* A galeria mora no HTML; aqui só a lemos para o lightbox. */
+  var trilho = document.getElementById('galeria'),
+      conta  = document.getElementById('car-conta'),
+      bAnt   = document.getElementById('car-ant'),
+      bProx  = document.getElementById('car-prox');
+
+  [].forEach.call(trilho.querySelectorAll('.gitem[data-de]'), function(b){
+    var fonte = document.getElementById(b.getAttribute('data-de'));
+    if (!fonte) return;
+    var novo = document.createElement('img');
+    novo.setAttribute('src', fonte.getAttribute('src'));
+    novo.setAttribute('alt', b.getAttribute('data-cap') || fonte.getAttribute('alt') || '');
+    b.insertBefore(novo, b.firstChild);
+  });
+
+  var FOTOS = [].map.call(trilho.querySelectorAll('.gitem'), function(b, i){
+    var img = b.querySelector('img'),
+        chip = b.querySelector('.chip'),
+        cap = img ? img.getAttribute('alt') : (chip ? chip.textContent : 'Foto ' + (i+1));
+    b.setAttribute('aria-label', 'Abrir foto ' + (i+1) + ': ' + cap);
+    if (img) img.loading = i === 0 ? 'eager' : 'lazy';
+    b.addEventListener('click', function(){ abrir(i); });
+    return { src: img ? img.getAttribute('src') : null, cap: cap };
+  });
+
+
+  function passo(){
+    var item = trilho.querySelector('.gitem');
+    if (!item) return trilho.clientWidth;
+    var cs = getComputedStyle(trilho);
+    var gap = parseFloat(cs.columnGap || cs.gap || 0) || 0;
+    return item.getBoundingClientRect().width + gap;
+  }
+  function atualizaSetas(){
+    var i = Math.round(trilho.scrollLeft / passo()) + 1;
+    if (i < 1) i = 1;
+    if (i > FOTOS.length) i = FOTOS.length;
+    conta.textContent = pad(i) + ' / ' + pad(FOTOS.length);
+    bAnt.disabled = trilho.scrollLeft <= 4;
+    bProx.disabled = trilho.scrollLeft >= trilho.scrollWidth - trilho.clientWidth - 4;
+  }
+  bAnt.addEventListener('click', function(){ trilho.scrollBy({left:-passo(), behavior:'smooth'}); });
+  bProx.addEventListener('click', function(){ trilho.scrollBy({left: passo(), behavior:'smooth'}); });
+  trilho.addEventListener('scroll', atualizaSetas, {passive:true});
+  window.addEventListener('resize', atualizaSetas);
+  atualizaSetas();
+
+  var lb = document.getElementById('lightbox'),
+      quadro = document.getElementById('lb-quadro'),
+      legenda = document.getElementById('lb-legenda'),
+      contador = document.getElementById('lb-contador'),
+      atual = 0, anterior = null;
+
+  function render(){
+    var f = FOTOS[atual];
+    quadro.innerHTML = '';
+    if (f.src){
+      var img = document.createElement('img');
+      img.src = f.src; img.alt = f.cap;
+      quadro.appendChild(img);
+    } else {
+      var vazio = document.createElement('div');
+      vazio.className = 'lb-vazio';
+      var s = document.createElement('span');
+      s.textContent = 'ESPAÇO RESERVADO — ' + f.cap.toUpperCase();
+      vazio.appendChild(s);
+      quadro.appendChild(vazio);
+    }
+    legenda.textContent = f.cap;
+    contador.textContent = pad(atual+1) + ' / ' + pad(FOTOS.length);
+  }
+  function abrir(i){
+    atual = i; anterior = document.activeElement;
+    lb.hidden = false; document.body.style.overflow = 'hidden';
+    render(); document.getElementById('lb-fechar').focus();
+  }
+  function fechar(){
+    lb.hidden = true; document.body.style.overflow = '';
+    if (anterior && anterior.focus) anterior.focus();
+  }
+  function mover(d){ atual = (atual + d + FOTOS.length) % FOTOS.length; render(); }
+
+  document.getElementById('lb-fechar').addEventListener('click', fechar);
+  document.getElementById('lb-ant').addEventListener('click', function(){ mover(-1); });
+  document.getElementById('lb-prox').addEventListener('click', function(){ mover(1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) fechar(); });
+  document.addEventListener('keydown', function(e){
+    if (lb.hidden) return;
+    if (e.key === 'Escape') fechar();
+    else if (e.key === 'ArrowLeft') mover(-1);
+    else if (e.key === 'ArrowRight') mover(1);
+  });
+
+  var WHATS = '5512991078621';
+  var form    = document.getElementById('form-reserva'),
+      btnWa   = document.getElementById('btn-wa'),
+      planoB  = document.getElementById('plano-b'),
+      msgArea = document.getElementById('msg-pronta'),
+      linkCru = document.getElementById('link-cru'),
+      btnCopiar = document.getElementById('btn-copiar'),
+      avisoCopia = document.getElementById('aviso-copia');
+
+  function dataBr(v){
+    if (!v) return '';
+    var p = v.split('-');
+    return p.length === 3 ? p[2] + '/' + p[1] + '/' + p[0] : v;
+  }
+
+  function montaMensagem(){
+    var nome = form.nome.value.trim(), tipo = form.tipo.value,
+        ent = dataBr(form.entrada.value), sai = dataBr(form.saida.value),
+        ad = form.adultos.value.trim(), cr = form.criancas.value.trim(),
+        obs = form.obs.value.trim(), l = [];
+
+    l.push('Oi! ' + (nome ? 'Aqui é ' + nome + '. ' : '') + 'Vim pelo site do Recanto Água Doce e queria consultar disponibilidade para ' + tipo + '.');
+    if (ent && sai) l.push('Datas: de ' + ent + ' a ' + sai + '.');
+    else if (ent) l.push('Data de entrada: ' + ent + '.');
+    else if (sai) l.push('Data de saída: ' + sai + '.');
+
+    var pessoas = [];
+    if (ad) pessoas.push(ad + (ad === '1' ? ' adulto' : ' adultos'));
+    if (cr && cr !== '0') pessoas.push(cr + (cr === '1' ? ' criança' : ' crianças'));
+    if (pessoas.length) l.push('Somos ' + pessoas.join(' e ') + '.');
+    if (obs) l.push(obs);
+
+    return l.join('\n\n');
+  }
+
+  /* O href fica sempre pronto: o clique é num link de verdade, que funciona
+     mesmo onde a página não tem permissão para abrir janela por script. */
+  /* O parâmetro app_absent fica DEPOIS do text de propósito: alguns navegadores
+     acrescentam "#no_universal_links" no fim do href, e se o text for o último
+     parâmetro esse fragmento entra na mensagem enviada. */
+  function atualizaLink(){
+    var texto = montaMensagem(),
+        url = 'https://wa.me/' + WHATS + '?text=' + encodeURIComponent(texto) + '&app_absent=0';
+    btnWa.setAttribute('href', url);
+    linkCru.setAttribute('href', url);
+    msgArea.value = texto;
+  }
+
+  form.addEventListener('input', atualizaLink);
+  form.addEventListener('change', atualizaLink);
+  form.addEventListener('submit', function(e){ e.preventDefault(); btnWa.click(); });
+  atualizaLink();
+
+  /* Depois do clique, mostra o plano B — se a aba não abriu, a mensagem
+     está ali para copiar. */
+  btnWa.addEventListener('click', function(){
+    atualizaLink();
+    planoB.hidden = false;
+  });
+
+  btnCopiar.addEventListener('click', function(){
+    var ok = false;
+    try {
+      msgArea.focus();
+      msgArea.select();
+      msgArea.setSelectionRange(0, msgArea.value.length);
+      ok = document.execCommand && document.execCommand('copy');
+    } catch (err) { ok = false; }
+
+    if (!ok && navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(msgArea.value).then(function(){
+        avisoCopia.hidden = false;
+        setTimeout(function(){ avisoCopia.hidden = true; }, 2500);
+      }).catch(function(){
+        avisoCopia.textContent = 'Selecione o texto acima e copie.';
+        avisoCopia.hidden = false;
+      });
+      return;
+    }
+    avisoCopia.textContent = ok ? 'Copiada.' : 'Selecione o texto acima e copie.';
+    avisoCopia.hidden = false;
+    if (ok) setTimeout(function(){ avisoCopia.hidden = true; }, 2500);
+  });
+})();
+</script>
+
+</body>
+</html>
