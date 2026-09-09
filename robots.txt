@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /guia/
-
-Sitemap: https://recantoaguadoce.com.br/sitemap.xml
