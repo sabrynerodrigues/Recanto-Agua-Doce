@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Guia do Hóspede — Recanto Água Doce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Guia do hóspede — mesmo sistema visual do site.
+   Leve de propósito: o sinal de celular no sítio é fraco. */
+:root{
+  --barro:#984216; --barro-escuro:#7C350F;
+  --areia:#E4D6C5; --areia-clara:#EFE6D9; --areia-escura:#D3C2AC;
+  --ceu:#78898F; --salvia:#8D957E;
+  --tinta:#1F1B16; --tinta-2:#5B5145; --tinta-3:#8B7F6E;
+  --pad:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--areia-clara);color:var(--tinta);
+  font-family:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400;margin:0;text-wrap:balance}
+p{margin:0 0 1em}
+a{color:var(--barro)}
+img{display:block;max-width:100%}
+.wrap{width:100%;max-width:720px;margin:0 auto;padding:0 var(--pad)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase}
+.rotulo{color:var(--barro);margin:0 0 .8rem}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--barro);outline-offset:3px}
+
+/* capa */
+.capa{position:relative;background:#211C16;overflow:hidden}
+.capa>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.capa::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(24,20,15,.55) 0%,rgba(24,20,15,.25) 40%,rgba(24,20,15,.85) 100%)}
+.capa-dentro{position:relative;z-index:2;padding:2.6rem 0 2.4rem}
+.assinatura{color:#EFE6D9;line-height:1;margin-bottom:2.6rem}
+.assinatura .a1{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;display:block}
+.assinatura .a2{font-family:"Instrument Serif",Georgia,serif;font-size:1.45rem;letter-spacing:.05em;display:block;margin-top:.2rem}
+.capa h1{color:#F3EBDE;font-size:2rem;line-height:1.1}
+.capa .sub{color:#E4D6C5;margin-top:.9rem;opacity:.9}
+
+/* índice */
+.indice{background:var(--areia);padding:1.6rem 0}
+.indice ol{list-style:none;counter-reset:i;padding:0;margin:0;display:grid;gap:.45rem}
+.indice li{counter-increment:i;display:grid;grid-template-columns:2rem 1fr;gap:.6rem;font-size:.95rem}
+.indice li::before{content:counter(i,decimal-leading-zero);font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--barro);padding-top:.25rem}
+.indice a{text-decoration:none;color:var(--tinta)}
+.indice a:hover{color:var(--barro)}
+
+section{padding:2.6rem 0;border-bottom:1px solid var(--areia-escura)}
+section:last-of-type{border-bottom:0}
+h2{font-size:1.6rem;line-height:1.18;margin-bottom:.9rem}
+h3{font-family:"Instrument Sans",Arial,sans-serif;font-size:1rem;font-weight:600;margin:1.6rem 0 .4rem}
+
+.destaque{background:var(--areia);border-left:3px solid var(--barro);padding:1.1rem 1.2rem;margin:1.4rem 0}
+.destaque p{margin:0}
+.destaque p + p{margin-top:.7rem}
+.destaque.atencao{border-left-color:var(--barro);background:rgba(152,66,22,.08)}
+
+.dados{list-style:none;padding:0;margin:1.2rem 0 0}
+.dados li{display:grid;gap:.1rem;border-top:1px solid var(--areia-escura);padding:.75rem 0;font-size:.95rem}
+.dados li em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-3)}
+@media(min-width:560px){.dados li{grid-template-columns:9rem 1fr;gap:1rem;align-items:baseline}}
+
+ul.lista{list-style:none;padding:0;margin:.9rem 0 0;display:grid;gap:.5rem}
+ul.lista li{display:grid;grid-template-columns:1rem 1fr;gap:.6rem;font-size:.95rem;line-height:1.5}
+ul.lista li::before{content:"·";color:var(--barro);font-weight:700}
+
+.pendente{background:rgba(120,137,143,.14);border:1px dashed var(--ceu);padding:.9rem 1rem;margin:1rem 0;
+  font-family:"IBM Plex Mono",monospace;font-size:.72rem;line-height:1.6;color:var(--tinta-2)}
+
+.btn{display:inline-block;background:var(--barro);color:var(--areia-clara);border:1px solid var(--barro);
+  padding:.8rem 1.4rem;text-decoration:none;font-size:.92rem;font-weight:500;margin-top:.4rem}
+.btn:hover{background:var(--barro-escuro)}
+
+.foto{margin:1.4rem 0 0;border:1px solid var(--areia-escura)}
+
+footer{background:var(--tinta);color:var(--areia);padding:2.4rem 0 3rem;font-size:.88rem}
+footer a{color:#E9A56F;text-decoration:none}
+footer p{margin:0 0 .6rem}
+
+@media print{
+  body{background:#fff;font-size:11pt}
+  .capa,.indice,.btn{display:none}
+  section{break-inside:avoid;border-bottom:1px solid #ccc;padding:1rem 0}
+  footer{background:#fff;color:#000}
+  a{color:#000;text-decoration:underline}
+  .pendente{border:1px dashed #999}
+}
+</style>
+</head>
+<body>
+<header class="capa">
+  <img src="/img/escada-rio.jpg" alt="A escada de madeira que desce da casa até o rio.">
+  <div class="capa-dentro">
+    <div class="wrap">
+      <div class="assinatura"><span class="a1">Recanto</span><span class="a2">Água Doce</span></div>
+      <p class="mono" style="color:#E4D6C5;opacity:.85">Guia do hóspede</p>
+      <h1>Bem-vindos.<br>A casa é de vocês agora.</h1>
+      <p class="sub">Tudo o que você precisa saber para aproveitar ao máximo a sua estadia.</p>
+    </div>
+  </div>
+</header>
+
+<nav class="indice">
+  <div class="wrap">
+    <ol>
+      <li><a href="#chegar">Como chegar</a></li>
+      <li><a href="#chegada">A chegada e o Wi-Fi</a></li>
+      <li><a href="#casa">A casa por dentro</a></li>
+      <li><a href="#agua">O rio e a piscina</a></li>
+      <li><a href="#cuidados">Três cuidados que fazem diferença</a></li>
+      <li><a href="#regiao">Na região</a></li>
+      <li><a href="#saida">Na hora de ir embora</a></li>
+      <li><a href="#falar">Qualquer coisa, me chama</a></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <section id="abertura">
+    <p>Que bom ter vocês aqui. Antes de qualquer coisa, uma explicação que acho justa: <strong>o sítio é da nossa família</strong>. A gente aluga ele só quando não está usando, e por isso cuidamos dele com muito carinho.</p>
+    <p>Alguns pedidos deste guia existem justamente para isso: para que a gente consiga manter o sítio esse lugar aconchegante e gostoso de chegar. São pedidos de casa, não de hotel — nada aqui é regra por regra, cada uma tem um motivo e eu conto qual é.</p>
+    <p>Guardei tudo numa página só pra você não ter que caçar informação no meio da conversa. <strong>Salva esse link nos favoritos</strong>: o sinal de celular aqui é fraco, e é bom já estar aberto quando você precisar.</p>
+  </section>
+
+  <section id="chegar">
+    <p class="mono rotulo">01</p>
+    <h2>Como chegar</h2>
+    <ul class="dados">
+      <li><em>Endereço</em><span>Estrada do Rio Monteiro, 2800 — Bairro Passa Vinte, Cruzeiro / SP</span></li>
+      <li><em>No mapa</em><span><a href="https://maps.google.com/?q=-22.545759,-45.037067">abrir no Google Maps</a></span></li>
+      <li><em>Plus Code</em><span>S89PFX37+M4</span></li>
+      <li><em>Do centro</em><span>cerca de 20 minutos de carro</span></li>
+    </ul>
+
+    <h3>O último trecho é de terra</h3>
+    <p>São 1,5 km de estrada de terra até a porteira. Ela fica em boas condições e carro baixo chega tranquilo, inclusive com chuva — só vá devagar, porque é estreita e às vezes tem gente de bicicleta ou cachorro na pista.</p>
+
+    <p>Esse é o pedaço que mais gera dúvida, então gravei o caminho todo: <a href="https://drive.google.com/file/d/1A8xyq2zDMFESWU3ve9dP7yR1XO69vIYm/view?usp=drivesdk">ver o vídeo do trajeto até a porteira</a>. Vale assistir antes de sair de casa, porque o sinal cai nesse trecho.</p>
+
+    <h3>Passe no mercado antes</h3>
+    <p>O mercado mais perto fica a 10–15 minutos, no caminho. Depois da porteira não tem nada, então vale já chegar com o que precisa — inclusive carvão, se a ideia for churrasco.</p>
+  </section>
+
+  <section id="chegada">
+    <p class="mono rotulo">02</p>
+    <h2>A chegada e o Wi-Fi</h2>
+    <ul class="dados">
+      <li><em>Check-in</em><span>das 15h às 19h</span></li>
+      <li><em>Check-out</em><span>das 8h às 12h</span></li>
+      <li><em>Quem recebe</em><span>alguém da família recebe vocês no sítio e entrega as chaves</span></li>
+      <li><em>Wi-Fi</em><span>rede <strong>Chacara Gomes</strong> · senha <strong>Gomes2800</strong></span></li>
+      <li><em>Celular</em><span>o sinal é fraco e varia por operadora — a Claro é a que pega melhor</span></li>
+    </ul>
+    <p style="margin-top:1.2rem">Os dois horários são flexíveis quando dá — depende de ter alguém saindo ou entrando no mesmo dia. Se precisar chegar mais cedo ou sair mais tarde, é só me perguntar com antecedência que eu vejo aqui.</p>
+    <p><strong>Não fica ninguém no sítio durante a estadia.</strong> A casa é toda de vocês, e qualquer coisa é comigo pelo WhatsApp.</p>
+  </section>
+
+  <section id="casa">
+    <p class="mono rotulo">03</p>
+    <h2>A casa por dentro</h2>
+    <ul class="dados">
+      <li><em>Quartos</em><span>um de casal e dois com três beliches cada — 14 lugares no total</span></li>
+      <li><em>Banheiros</em><span>cinco: um na casa e quatro no salão</span></li>
+      <li><em>Ventilação</em><span>ventiladores de teto nos quartos. Não há ar-condicionado</span></li>
+      <li><em>Salão</em><span>churrasqueira, mesas de madeira, e mais 3 mesas e 12 cadeiras de plástico</span></li>
+      <li><em>Área externa</em><span>forno e fogão a lenha</span></li>
+    </ul>
+
+    <h3>Na cozinha</h3>
+    <p>Fogão, geladeira, freezer, micro-ondas, airfryer, cafeteira elétrica, liquidificador, batedeira e ferro de passar. Louças e utensílios básicos para o grupo todo.</p>
+
+    <h3>Roupa de cama e banho</h3>
+    <p>Não está incluída, mas existe como extra: kit de cama, kit de banho, ou os dois. Para saber valores e reservar os kits, é só me chamar no WhatsApp antes da viagem. Se preferir trazer a sua, também funciona.</p>
+  </section>
+
+  <section id="agua">
+    <p class="mono rotulo">04</p>
+    <h2>O rio e a piscina</h2>
+    <p>O rio corre dentro do terreno e o acesso é por dentro da casa, descendo uma escada de madeira. Ele é próprio para banho o ano todo, com partes rasas e partes fundas. É o melhor lugar da propriedade e provavelmente onde vocês vão passar a manhã.</p>
+
+    <div class="destaque atencao">
+      <p><strong>Preciso ser bem clara sobre uma coisa.</strong> Nem a piscina nem o rio têm cerca, grade ou qualquer proteção, e o acesso à água é livre. A piscina é funda.</p>
+      <p>Criança na água, aqui, é sempre com um adulto junto — não dá para contar com barreira nenhuma. Prefiro falar isso agora do que você descobrir na hora.</p>
+    </div>
+
+    <p>Fora isso, é soltar. Espaço para correr é o que não falta.</p>
+  </section>
+
+  <section id="cuidados">
+    <p class="mono rotulo">05</p>
+    <h2>Três cuidados que fazem diferença</h2>
+
+    <h3>Latas de lixo bem fechadas</h3>
+    <p>De vez em quando temos visitantes por aqui rsrs — os cachorros dos vizinhos adoram passear pela área e viram tudo se acharem lixo aberto. Fechar bem já resolve.</p>
+
+    <h3>Luzes e ventiladores desligados</h3>
+    <p>Quando sair de um cômodo, apaga. A casa é grande e o consumo dispara rápido com tudo ligado.</p>
+
+    <h3>Cozinha em dia</h3>
+    <p>Vale ir lavando a louça ao longo dos dias, em vez de deixar tudo para o final. E cuidado com água no chão de área interna — o piso fica escorregadio.</p>
+
+    <div class="destaque">
+      <p><strong>Estadia longa?</strong> Se vocês ficarem alguns dias, eu posso agendar uma faxina extra no meio da estadia — assim a casa fica novinha para o restante dos dias. É só me falar que eu organizo.</p>
+    </div>
+  </section>
+
+  <section id="regiao">
+    <p class="mono rotulo">06</p>
+    <h2>Na região</h2>
+    <ul class="dados">
+      <li><em>Mercado</em><span>10 a 15 minutos, no caminho de volta para o asfalto</span></li>
+      <li><em>Centro</em><span>cerca de 20 minutos</span></li>
+      <li><em>Canção Nova</em><span>~20 min, em Cachoeira Paulista. Retiros e encontros o ano todo</span></li>
+      <li><em>INPE</em><span>~20 min, em Cachoeira Paulista. O Instituto Nacional de Pesquisas Espaciais</span></li>
+      <li><em>Cachoeira da Pedreira</em><span>em Lavrinhas. Uma sequência de poços entre pedras, na Mantiqueira</span></li>
+    </ul>
+  </section>
+
+  <section id="saida">
+    <p class="mono rotulo">07</p>
+    <h2>Na hora de ir embora</h2>
+    <p>São só quatro coisas que ajudam muito:</p>
+    <ul class="lista">
+      <li>Mesas e cadeiras de volta no lugar onde estavam</li>
+      <li>Louças lavadas</li>
+      <li>Lixo todo juntado e fechado</li>
+      <li>Lixo levado até a caçamba do bairro, que fica no caminho da saída — <a href="https://maps.app.goo.gl/g3CvYuhJ8HJVzbuT6?g_st=i">abrir no Google Maps</a></li>
+    </ul>
+
+    <p style="margin-top:1.4rem">Se algo quebrou ou deu problema durante a estadia, me conta antes de ir. Acontece, e é muito mais fácil resolver sabendo.</p>
+  </section>
+
+  <section id="falar">
+    <p class="mono rotulo">08</p>
+    <h2>Qualquer coisa, me chama</h2>
+    <p>Estou no WhatsApp durante toda a estadia de vocês. Dúvida, problema, ou só para pedir uma dica do que fazer na região — pode chamar.</p>
+    <a class="btn" href="https://wa.me/5512991078621?app_absent=0">Falar comigo no WhatsApp</a>
+    <p style="margin-top:1.4rem">Boa estadia. Espero que vocês durmam com o barulho do rio e voltem.</p>
+    <p style="font-family:'Instrument Serif',Georgia,serif;font-size:1.3rem;color:var(--barro)">Sabryne</p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Recanto Água Doce</strong> · S &amp; B Empreendimentos LTDA · Cruzeiro / SP</p>
+    <p><a href="https://wa.me/5512991078621">(12) 99107-8621</a> · <a href="https://www.instagram.com/recanto.aguadoce">@recanto.aguadoce</a> · <a href="/">recantoaguadoce.com.br</a></p>
+    <p style="color:var(--tinta-3);font-size:.8rem;margin-top:1rem">Este guia é para hóspedes com reserva confirmada. Ele traz o endereço exato e a senha do Wi-Fi — evite compartilhar o link.</p>
+  </div>
+</footer>
+</body>
+</html>
